@@ -12727,19 +12727,46 @@ hr.divider-light {
   }
 }
 
+/* Style for the header with the video background */
 header.masthead {
+  position: relative; /* Make sure content can be positioned above the video */
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/2015_16_11_5649c9f7697a5_1120.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
 }
 
+/* Style for the background video */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Make sure the video covers the entire area */
+  z-index: -999; /* Sends the video behind the content */
+}
+
+/* Content inside the header */
 header.masthead h1,
 header.masthead .h1 {
   font-size: 2.25rem;
+}
+
+header.masthead p {
+  font-size: 1.125rem; /* Adjust text size if needed */
+  color: rgba(255, 255, 255, 0.75); /* Light, semi-transparent text color */
+  font-weight: 300; /* Adjust the weight if needed */
+}
+
+/* Optional: Dark overlay for better contrast on the content */
+header.masthead::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(92, 77, 66, 0.8); /* Dark overlay */
+  z-index: -2; /* Overlay sits above the video but below the content */
 }
 
 @media (min-width: 992px) {
@@ -12837,4 +12864,54 @@ header.masthead .h1 {
 #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption,
 #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+.container-title {
+  color: #e5e5e5;
+  font-size: 2.26rem;
+  text-transform: uppercase;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animation {
+  height:50px;
+  overflow:hidden;
+  margin-left: 1rem;
+}
+
+.animation > div > div {
+  padding: 0.25rem 0.75rem;
+  height:2.81rem;
+  margin-bottom: 2.81rem;
+  display:inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first div {
+  background-color:#20a7d8;
+}
+.second div {
+  background-color:#CD921E;
+}
+.third div {
+  background-color:#c10528;
+}
+
+@keyframes text-animation {
+  0% {margin-top: 0;}
+  10% {margin-top: 0;}
+  20% {margin-top: -5.62rem;}
+  30% {margin-top: -5.62rem;}
+  40% {margin-top: -11.24rem;}
+  60% {margin-top: -11.24rem;}
+  70% {margin-top: -5.62rem;}
+  80% {margin-top: -5.62rem;}
+  90% {margin-top: 0;}
+  100% {margin-top: 0;}
 }
