@@ -2,288 +2,77 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>HUNNA</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/img/b19caf536978bd4d240d7ce69cee5ec6.webp" />
-    <!-- Bootstrap Icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
-        rel="stylesheet" type="text/css" />
-    <!-- SimpleLightbox plugin CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Letter Notice</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: #f9f9f9;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .letter {
+            background: #fff;
+            border: 1px solid #ccc;
+            padding: 40px;
+            max-width: 600px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            line-height: 1.6;
+        }
+
+        .letter h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .letter p {
+            margin-bottom: 15px;
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-style: italic;
+        }
+    </style>
 </head>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#page-top">HUNNA</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link replace-text" href="#about">ABOUT HUNNA</a></li>
-                    <li class="nav-item"><a class="nav-link replace-text" href="#services">HUNNA</a></li>
-                    <li class="nav-item"><a class="nav-link replace-text" href="#portfolio">HUNNA PHOTOS</a></li>
-                    <li class="nav-item"><a class="nav-link replace-text" href="#contact">CONTACT HUNNA</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-        <!-- Video background -->
-        <video class="background-video" autoplay muted loop>
-            <source src="/assets/img/newhunnabackground.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    
-        <!-- Content on top of the video -->
-        <div class="container px-4 px-lg-5 h-100" style="z-index: 999 !important;">
-            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                <div class="col-lg-8 align-self-end">
-                    <main class="container-title">
-                        <p class="replace-text">Welcome to HUNNA, I'm</p>
-                        <section class="animation">
-                          <div class="first replace-text"><div>the HUNNA</div></div>
-                          <div class="second replace-text"><div>that CS:GO Player</div></div>
-                          <div class="third replace-text"><div>a sperg</div></div>
-                        </section>
-                      </main>
-                    <hr class="divider" />
-                </div>
-                <div class="col-lg-8 align-self-baseline">
-                    <p class="text-white-75 mb-5 replace-text">
-                        Meet Hunna: The CS:GO Pro with Personality <br> <br>
-    
-                        Step into the world of competitive gaming with Hunna, the CS:GO professional known not just for his skill, but for his unforgettable antics and wacky moments. Whether he's pulling off impossible clutches or lightening the mood with his unique sense of humor, Hunna is the player who keeps both fans and foes on their toes. <br> <br>
-    
-                        What Makes Hunna Stand Out?
-                        Skill & Strategy: With pinpoint accuracy and strategic brilliance, Hunna is a force to be reckoned with on any map.
-                        Wacky Antics: From unexpected plays to hilarious in-game commentary, there's never a dull moment when Hunna is in the server.
-                        Fan Engagement: Known for his interactive streams, Hunna loves connecting with fans, sharing tips, and bringing them into the action.
-                        Memorable Personality: His infectious energy and passion for the game make him a favorite among both casual viewers and hardcore esports fans.
-                        Join the adventure and see why Hunna is quickly becoming a household name in the CS:GO scene. Whether you're a seasoned gamer or new to the world of esports, Hunna is sure to entertain and inspire. Don’t miss out on the excitement—follow Hunna today!
-                    </p>
-                    <a class="btn btn-primary btn-xl replace-text" href="#about" id="info-button">Find Out More About Hunna</a>
-                    <button onclick="toggleHunna()" class="btn btn-primary btn-xl ms-3">HUNNA TRANSLATION</button>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- About-->
-    <section class="page-section bg-primary" id="about">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 text-center">
-                    <h2 class="text-white mt-0 replace-text">Who Is HUNNA?</h2>
-                    <hr class="divider divider-light" />
-                    <p class="text-white-75 mb-4 replace-text">He is just a funny guy who loves to play CS:GO and spurg.</p>
-                    <a class="btn btn-light btn-xl replace-text" href="#services">More About HUNNA</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services-->
-    <section class="page-section" id="services">
-        <div class="container px-4 px-lg-5">
-            <h2 class="text-center mt-0 replace-text">MORE ABOUT HUNNA</h2>
-            <hr class="divider" />
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2 replace-text">CS:GO PRO</h3>
-                        <p class="text-muted mb-0 replace-text">One of HUNNA favorite game is counter-strike and continues to play
-                            the game.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2 replace-text">Best Custom Voice Channel</h3>
-                        <p class="text-muted mb-0 replace-text">HUNNA has the best custom voice channel in Chillzone.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2 replace-text">Saying HUNNA</h3>
-                        <p class="text-muted mb-0 replace-text">SAY IT. SAY HUNNA YOU STUPID PIECE OF SHIT</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2 replace-text">Hunna LOVES Tankin</h3>
-                        <p class="text-muted mb-0 replace-text">"HUNNA HUNNA HUNNA I LOVE HUNNA" - Tankin</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Portfolio-->
-    <div id="portfolio">
-        <div class="container-fluid p-0">
-            <div class="row g-0">
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="https://raw.githubusercontent.com/WackoFlaka/HUNNA-website/refs/heads/main/assets/img/tankin.PNG" title="Hunna LOVES Tankin">
-                        <img src="https://raw.githubusercontent.com/WackoFlaka/HUNNA-website/refs/heads/main/assets/img/tankin.PNG" alt="..."
-                            style="object-fit: cover; width: 600px; height: 600px;" />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50 replace-text">TANKIN</div>
-                            <div class="project-name replace-text">Hunna LOVES Tankin</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box"
-                        href="https://raw.githubusercontent.com/WackoFlaka/HUNNA-website/refs/heads/main/assets/img/HunnaMustang.webp"
-                        title="HUNNA MUSTANG">
-                        <img src="https://raw.githubusercontent.com/WackoFlaka/HUNNA-website/refs/heads/main/assets/img/HunnaMustang.webp"
-                            alt="..." style="object-fit: cover; width: 600px; height: 600px;" />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50 replace-text">HUNNA</div>
-                            <div class="project-name replace-text">HUNNA MUSTANG!</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="assets/img/b19caf536978bd4d240d7ce69cee5ec6.webp" title="HUNNA PFP">
-                        <img src="assets/img/b19caf536978bd4d240d7ce69cee5ec6.webp" alt="..."
-                            style="object-fit: cover; width: 600px; height: 600px;" />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50 replace-text">PFP</div>
-                            <div class="project-name replace-text">HUNNA PFP</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="https://raw.githubusercontent.com/WackoFlaka/HUNNA-website/refs/heads/main/assets/img/csgohunna.PNG" title="CSGO HUNNA">
-                        <img src="https://raw.githubusercontent.com/WackoFlaka/HUNNA-website/refs/heads/main/assets/img/csgohunna.PNG" alt="..."
-                            style="object-fit: cover; width: 600px; height: 600px;" />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">CSGO</div>
-                            <div class="project-name">CSGO HUNNA</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="https://raw.githubusercontent.com/WackoFlaka/HUNNA-website/refs/heads/main/assets/img/HUNNAVC.PNG" title="We won..">
-                        <img src="https://raw.githubusercontent.com/WackoFlaka/HUNNA-website/refs/heads/main/assets/img/HUNNAVC.PNG" alt="..."
-                            style="object-fit: cover; width: 600px; height: 600px;" />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50 replace-text">CLICK ON ME BITCH</div>
-                            <div class="project-name replace-text">TOP VC</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="https://raw.githubusercontent.com/WackoFlaka/HUNNA-website/refs/heads/main/assets/img/2015_16_11_5649c9f7697a5_1120.jpg" title="HUNNA HUNNA">
-                        <img src="https://raw.githubusercontent.com/WackoFlaka/HUNNA-website/refs/heads/main/assets/img/2015_16_11_5649c9f7697a5_1120.jpg" alt="..."
-                            style="object-fit: cover; width: 600px; height: 600px;" />
-                        <div class="portfolio-box-caption p-3">
-                            <div class="project-category text-white-50 replace-text">HUNNA HUNNA</div>
-                            <div class="project-name replace-text">HUAHFUIEHGIUHG:</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+<body>
+
+    <div class="letter">
+        <h1>Dear Chillzone,</h1>
+        <p>
+            By the time you find this it probably means I made the final decision and I will explain that in a bit. Ive
+            been in Chillzone for probably about two years and honestly I've never been so happy making all of these
+            friends on the way and making amazing memories. Even when I first joined I thought I was going to have hard
+            time making friends but I didn't, I was glad that I met so many people and enjoyed talking to each and every
+            one of them.
+        </p>
+        <p>
+            I just want to let you know, that it isn't you but its me. I've been suffering from severe depression for
+            awhile and life really hasn't been looking to well for my future. I honestly been so focused on others than
+            myself and I've just keep reminding myself that I need to look out for me first at all costs.
+        </p>
+        <p>
+            My final decision is to leave Chillzone and finally start working on myself and building a better future. I
+            don't want any distractions and I want to figure this out on my own. It really does hurt me a lot but I've
+            noticed every day my life its been taking me away as a person and not able to be myself. I really hope you
+            understand and respect my decision. Chillzone will always have a special place in my heart and will never
+            forget the memories and friends I made.
+        </p>
+        <p>
+            Till next time, amigos :)
+        </p>
+        <p class="signature">
+            Sincerely,<br>
+            The one and only Wacko
+        </p>
     </div>
-    <!-- Call to action-->
-    <section class="page-section bg-dark text-white">
-        <div class="container px-4 px-lg-5 text-center">
-            <h2 class="mb-4 replace-text">HOW TO HUNNA!</h2>
-            <p class="replace-text">To become the one and only and with HUNNA, you must say HUNNA constantly for 3 hours straight. It might
-                be difficult at first but promise me it will be worth it.</p>
-            <p><strong>WARNING: WE ARE NOT RESPONSIBLE FOR THE CURSING OF HUNNA IF PERSON HAS AGREED TO HUNNA.</strong>
-            </p>
-        </div>
-    </section>
-    <!-- Contact-->
-    <section class="page-section" id="contact">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="mt-0 replace-text">CONTACT HUNNA</h2>
-                    <hr class="divider" />
-                    <p class="text-muted mb-5 replace-text">Do you want to contact HUNNA? Contact right now :)</p>
-                </div>
-            </div>
 
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                    <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                    <div class="replace-text">HUNNA Discord: hunna0666</div>
-                    <div class="replace-text">HUNNA ONLYFANS: hunnucumhunna/onlyhunna.com</div>
-                    <div class="replace-text">Tankin Discord: Bitch</div>
-                    <div class="replace-text">Creator of Website (Wacko): Wacking off</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer-->
-    <footer class="bg-light py-5">
-        <div class="container px-4 px-lg-5">
-            <div class="small text-center text-muted replace-text">Copyright &copy; HUNNA</div>
-        </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- SimpleLightbox plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    <script>
-        // Function to replace every word in the text content with "Hunna"
-function replaceWithHunna() {
-    // Get all text elements to change
-    const textElements = document.querySelectorAll('.replace-text'); // You can adjust the selector as needed
-
-    // Iterate over each element
-    textElements.forEach(element => {
-        // Split the text into words and replace each word with "Hunna"
-        const words = element.innerText.split(/\b/); // Split by word boundaries, including spaces and punctuation
-        
-        // Replace every word with "Hunna" while maintaining punctuation and spacing
-        const replacedText = words.map(word => {
-            // Check if the word is a letter or number (i.e., not punctuation)
-            return word.trim() ? 'Hunna' : word;
-        }).join(''); // Rejoin all the words
-
-        // Update the element's text content
-        element.innerText = replacedText;
-    });
-}
-
-// Function to toggle the replacement on button click
-let hunnaReplaced = false; // Track whether the text has been replaced or not
-function toggleHunna() {
-    if (hunnaReplaced) {
-        // Restore original text (you might want to keep the original text somewhere to revert back)
-        location.reload(); // For simplicity, we reload the page to reset everything
-    } else {
-        // Replace text with "Hunna"
-        replaceWithHunna();
-    }
-    hunnaReplaced = !hunnaReplaced; // Toggle the state
-}
-    </script>
 </body>
 
 </html>
